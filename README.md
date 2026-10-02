@@ -106,7 +106,7 @@ portfolio/
 1. Clone the repository
 
 ```
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/CodeByChetana/portfolio.git
 ```
 
 2. Open the folder
@@ -116,8 +116,8 @@ git clone https://github.com/yourusername/portfolio.git
 
 ## 📩 Contact
 
-* 📧 Email: [your-email@gmail.com](mailto:your-email@gmail.com)
-* 💻 GitHub: https://github.com/yourusername
+* 📧 Email: [your-email@gmail.com](mailto:kchetana2149@gmail.com)
+* 💻 GitHub: https://github.com/CodeByChetana
 
 ---
 
