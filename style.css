@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0a0a0f;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #1a0b2e, #000);
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1100px;
+}
+
+/* IMAGE */
+.hero-image img {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(168,85,247,0.7);
+}
+
+/* TEXT */
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero-text span {
+  color: #a855f7;
+}
+
+.tagline {
+  color: #bbb;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.primary {
+  background: #a855f7;
+  color: white;
+}
+
+.secondary {
+  border: 1px solid #a855f7;
+  color: white;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 260px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(168,85,247,0.6);
+}
+
+.highlight {
+  border: 1px solid #a855f7;
+}
+
+/* SKILLS */
+.skills span {
+  padding: 8px 12px;
+  margin: 5px;
+  background: rgba(168,85,247,0.2);
+  border-radius: 20px;
+}
+
+/* ACHIEVEMENTS */
+.achievements {
+  list-style: none;
+}
+
+/* CONTACT */
+.contact {
+  background: #111;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-image img {
+    width: 220px;
+    height: 280px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}
