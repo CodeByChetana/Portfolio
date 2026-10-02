@@ -7,8 +7,7 @@ This project showcases my skills, projects, and achievements as a **Junior Front
 
 ## 🚀 Live Demo
 
-👉 Add your deployed link here:
-`https://chetanaportfolio-five.vercel.app/`
+👉 https://chetanaportfolio-five.vercel.app/
 
 ---
 
@@ -116,7 +115,7 @@ git clone https://github.com/CodeByChetana/portfolio.git
 
 ## 📩 Contact
 
-* 📧 Email: [your-email@gmail.com](mailto:kchetana2149@gmail.com)
+* 📧 Email: [kchetana2149@gmail.com](mailto:kchetana2149@gmail.com)
 * 💻 GitHub: https://github.com/CodeByChetana
 
 ---
