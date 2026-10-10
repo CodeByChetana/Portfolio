@@ -1,131 +1,317 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Chetana Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080711">
+  <meta name="description" content="Portfolio of Koppisetti Chetana — Junior Frontend Developer and Data Analyst.">
+  <title>Koppisetti Chetana | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
 
-<!-- 🔝 NAVBAR -->
-<nav class="navbar">
-  <h2>Chetana</h2>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <header class="navbar">
+    <a href="#home" class="logo">Chetana<span>✦</span></a>
 
-<!-- 🎬 HERO -->
-<section class="hero">
-  <div class="hero-container">
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">☰</button>
 
-    <!-- 📸 LEFT IMAGE -->
-    <div class="hero-image">
-      <img src="profile.jpg" alt="Chetana">
-    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-    <!-- 📝 RIGHT TEXT -->
-    <div class="hero-text">
-      <p class="hello">HELLO, I'M</p>
-      <h1>Koppisetti <span>Chetana</span></h1>
-      <h3>Junior Frontend Developer | Data Analyst</h3>
-      <p class="tagline">
-        I build data-driven solutions and user-friendly web applications using modern technologies.
-      </p>
+    <a href="assets/resume.pdf" class="resume-btn" download>
+      ↓ Resume
+    </a>
+  </header>
 
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="#contact" class="btn secondary">Contact Me</a>
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="hero-photo reveal">
+        <div class="photo-frame">
+          <!-- Replace profile.jpg with your own photograph -->
+          <img src="assets/profile.jpg"
+               alt="Portrait of Koppisetti Chetana"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder">
+            <span>YOUR PHOTO</span>
+            <small>Add your image as assets/profile.jpg</small>
+          </div>
+        </div>
+        <span class="photo-decoration"></span>
+        <p class="handwritten">Let's build<br>something great ♡</p>
       </div>
-    </div>
 
-  </div>
-</section>
+      <div class="hero-content reveal">
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>Koppisetti <span>Chetana</span></h1>
+        <h2>Junior Frontend Developer <i>|</i> Data Analyst</h2>
+        <p class="hero-description">
+          I build data-driven solutions and user-friendly web applications
+          using modern technologies. I enjoy turning raw data into meaningful
+          insights and ideas into useful digital experiences.
+        </p>
 
-<!-- 👩‍💻 ABOUT -->
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>
-    I am a 3rd-year BTech IT student at Sasi Institute of Technology & Engineering.
-    I specialize in Data Analytics and Web Development, focusing on solving real-world problems
-    through clean data analysis and intuitive web applications.
-  </p>
-</section>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Explore My Work ↗</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
 
-<!-- 💻 PROJECTS -->
-<section id="projects" class="section">
-  <h2>Projects</h2>
+        <div class="social-links">
+          <!-- Replace # with your real profile URLs -->
+          <a href="https://github.com/CodebyChetana" target="_blank" rel="noreferrer">GitHub ↗</a>
+          
+          <a href="mailto:kchetana2149@gmail.com">Email ↗</a>
+        </div>
+      </div>
 
-  <div class="cards">
+      <span class="side-note">DATA + CODE = IMPACT</span>
+    </section>
 
-    <div class="card">
-      <h3>Healthcare Analysis</h3>
-      <p>Cleaned and analyzed messy healthcare data to extract insights.</p>
-    </div>
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Turning Ideas Into <span>Real Solutions</span></h2>
+      </div>
 
-    <div class="card">
-      <h3>Nigerian Sales Analysis</h3>
-      <p>Analyzed sales trends and performance patterns.</p>
-    </div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            I'm a third-year BTech Information Technology student at
+            Sasi Institute of Technology & Engineering. My interests include
+            data analytics, frontend development, and problem-solving.
+          </p>
+          <p>
+            I work with Python, Pandas, SQL, HTML, CSS, and JavaScript,
+            and enjoy exploring how technology can solve real-world problems.
+          </p>
 
-    <div class="card highlight">
-      <h3>SIH Groundwater System</h3>
-      <p>Built a system using DWLR data to guide farmers on groundwater usage.</p>
-    </div>
+          <div class="info-pills">
+            <span>🎓 BTech IT · 3rd Year</span>
+            <span>📍 Sasi Institute of Technology & Engineering</span>
+            <span>🌐 Telugu · English</span>
+          </div>
+        </div>
 
-    <div class="card">
-      <h3>Event Management System</h3>
-      <p>Platform similar to Unstop for managing events.</p>
-    </div>
+        <div class="journey-card reveal">
+          <p class="eyebrow">MY JOURNEY</p>
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div><h3>Present</h3><p>BTech IT — Third Year</p></div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div><h3>Learning</h3><p>Data Analytics, Web Development & DSA</p></div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div><h3>Next Chapter</h3><p>Internships, real projects & continuous growth</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="card">
-      <h3>HomelyHub</h3>
-      <p>Tourism platform for booking hotels and exploring places.</p>
-    </div>
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Projects That <span>Tell a Story</span></h2>
+        <p>Exploring data, building experiences, solving problems.</p>
+      </div>
 
-  </div>
-</section>
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="data">Data Analytics</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+      </div>
 
-<!-- ⚡ SKILLS -->
-<section id="skills" class="section">
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>Python</span>
-    <span>SQL</span>
-    <span>Pandas</span>
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>MongoDB</span>
-    <span>MySQL</span>
-    <span>Git</span>
-    <span>Github</span>
-  </div>
-</section>
+      <div class="project-grid">
+        <article class="project-card reveal" data-category="data">
+          <div class="project-visual visual-purple"><span>DATA / 01</span><b>Healthcare<br>Insights</b></div>
+          <div class="project-body">
+            <p class="project-type">DATA ANALYTICS</p>
+            <h3>Healthcare Analysis</h3>
+            <p>Cleaned and explored healthcare data to identify patterns and communicate meaningful insights.</p>
+            <div class="tags"><span>Python</span><span>Pandas</span><span>Visualization</span></div>
+            <div class="project-links"><a href="https://github.com/CodeByChetana/healthcare-data-analysis.git" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+          </div>
+        </article>
 
-<!-- 🏆 ACHIEVEMENTS -->
-<section class="section">
-  <h2>Achievements</h2>
-  <ul class="achievements">
-    <li>SIH Internal Hackathon – Top 50</li>
-    <li>LeetCode – 55+ Problems</li>
-    <li>CodeChef – 390+ Problems</li>
-    <li>HackerRank – 3★ Python</li>
-  </ul>
-</section>
+        <article class="project-card reveal" data-category="data">
+          <div class="project-visual visual-blue"><span>DATA / 02</span><b>Nigerian<br>Sales</b></div>
+          <div class="project-body">
+            <p class="project-type">DATA ANALYTICS</p>
+            <h3>Nigerian Sales Analysis</h3>
+            <p>Explored sales data to understand performance, trends, and opportunities for better decisions.</p>
+            <div class="tags"><span>Python</span><span>Pandas</span><span>Charts</span></div>
+            <div class="project-links"><a href="https://github.com/CodeByChetana/Nigeria_sales_analysis.git" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+          </div>
+        </article>
 
-<!-- 📩 CONTACT -->
-<section id="contact" class="section contact">
-  <h2>Contact</h2>
-  <p>Email: kchetana2149@gmail.com</p>
-  <p><a href="https://github.com/CodeByChetana" target="_blank">GitHub: CodeByChetana</a></p>
-  <p><a href="https://leetcode.com/chetu_213/" target="_blank">LeetCode: chetu_213</a></p>
-  <p><a href="https://codechef.com/users/chetu_213" target="_blank">CodeChef: chetu_213</a></p>
-  <p><a href="https://hackerrank.com/24K61A1258" target="_blank">HackerRank: 24K61A1258</a></p>
-</section>
+        <article class="project-card reveal" data-category="web">
+          <div class="project-visual visual-green"><span>SIH / 03</span><b>Jala<br>Mitra</b></div>
+          <div class="project-body">
+            <p class="project-type">SOCIAL IMPACT · SIH</p>
+            <h3>Groundwater Advisory System</h3>
+            <p>A dashboard concept that analyzes DWLR groundwater data to support irrigation decisions in the Godavari region.</p>
+            <div class="tags"><span>Python</span><span>Flask</span><span>HTML/CSS/JS</span></div>
+            <div class="project-links"><a href="#" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#" target="_blank" rel="noreferrer">Demo ↗</a></div>
+          </div>
+        </article>
 
-<script src="script.js"></script>
+        <article class="project-card reveal" data-category="web">
+          <div class="project-visual visual-pink"><span>WEB / 04</span><b>Event<br>Connect</b></div>
+          <div class="project-body">
+            <p class="project-type">WEB DEVELOPMENT</p>
+            <h3>Event Management System</h3>
+            <p>A platform concept to discover and manage different events in one place.</p>
+            <div class="tags"><span>Web Development</span><span>Database</span></div>
+            <div class="project-links"><a href="#" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#" target="_blank" rel="noreferrer">Demo ↗</a></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="web">
+          <div class="project-visual visual-orange"><span>WEB / 05</span><b>Homely<br>Hub</b></div>
+          <div class="project-body">
+            <p class="project-type">TRAVEL & TOURISM</p>
+            <h3>HomelyHub</h3>
+            <p>A tourism platform concept for discovering destinations and exploring hotel booking options.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links"><a href="https://github.com/CodeByChetana/WSA-Internship-Project.git" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#" target="_blank" rel="noreferrer">Demo ↗</a></div>
+          </div>
+        </article>
+      </div>
+      <p class="note">Replace each # with the correct repository or live demo URL before publishing.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MY TOOLKIT</p>
+        <h2>Skills & <span>Technologies</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal"><span>01</span><h3>Programming</h3><p>Python · Java basics · C basics</p></div>
+        <div class="skill-card reveal"><span>02</span><h3>Data Analytics</h3><p>Pandas · Data Cleaning · Data Analysis · Visualization</p></div>
+        <div class="skill-card reveal"><span>03</span><h3>Web Development</h3><p>HTML · CSS · JavaScript</p></div>
+        <div class="skill-card reveal"><span>04</span><h3>Databases</h3><p>MySQL · SQL basics · MongoDB</p></div>
+        <div class="skill-card reveal"><span>05</span><h3>Developer Tools</h3><p>Git · GitHub · VS Code</p></div>
+        <div class="skill-card reveal"><span>06</span><h3>Problem Solving</h3><p>DSA with Python · Arrays · Coding practice</p></div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section" id="achievements">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MILESTONES</p>
+        <h2>Small Wins, <span>Big Ambitions</span></h2>
+      </div>
+
+      <div class="achievement-grid">
+        <article class="achievement-card reveal">
+          <span class="achievement-icon">🏆</span>
+          <h3>SIH Internal Hackathon</h3>
+          <p>Selected among the top 50 teams at the internal hackathon.</p>
+        </article>
+        <article class="achievement-card reveal">
+          <span class="achievement-icon">💻</span>
+          <h3>Coding Practice</h3>
+          <p>LeetCode: 60+ problems · CodeChef: 390+ score (update as needed).</p>
+        </article>
+        <article class="achievement-card reveal">
+          <span class="achievement-icon">⭐</span>
+          <h3>HackerRank</h3>
+          <p>Python: 3 stars · C and Java: 2 stars each.</p>
+        </article>
+        <article class="achievement-card reveal">
+          <span class="achievement-icon">🚀</span>
+          <h3>Hackathons & Expo</h3>
+          <p>Participated in hackathons and a project expo to build and present ideas.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="section" id="certificates">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CONTINUOUS LEARNING</p>
+        <h2>Certificates & <span>Learning</span></h2>
+      </div>
+
+      <div class="certificate-card reveal">
+        <div class="certificate-icon">✦</div>
+        <div>
+          <p class="project-type">NPTEL · PYTHON WITH DATA ANALYTICS</p>
+          <h3>Elite Certificate</h3>
+          <p>Completed the Python with Data Analytics course with a reported score of 70%.</p>
+          <a href="assets/nptel-certificate.pdf" target="_blank" rel="noreferrer">View Certificate ↗</a>
+        </div>
+      </div>
+      <p class="note">Add your actual certificate PDF or image to the assets folder. Include only certificates you have earned.</p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section-heading reveal">
+        <p class="eyebrow">LEARNING BY DOING</p>
+        <h2>Experience & <span>Education</span></h2>
+      </div>
+
+      <div class="experience-card reveal">
+        <div class="experience-marker"></div>
+        <div>
+          <p class="project-type">INTERNSHIP</p>
+          <h3>WSA — MERN Stack Internship</h3>
+          <p>Learning full-stack development through lessons, assignments, and a prototype project.</p>
+          <p class="muted">Add the actual dates and completion status.</p>
+        </div>
+      </div>
+
+      <div class="experience-card reveal">
+        <div class="experience-marker"></div>
+        <div>
+          <p class="project-type">EDUCATION</p>
+          <h3>BTech — Information Technology</h3>
+          <p>Sasi Institute of Technology & Engineering</p>
+          <p class="muted">Third-year student</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-panel reveal">
+        <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+        <h2>Let's Create Something <span>Meaningful.</span></h2>
+        <p>I'm interested in learning, collaborating, and building useful solutions with technology.</p>
+        <a href="mailto:your-email@example.com" class="btn btn-primary">Get in Touch ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#home" class="logo">Chetana<span>✦</span></a>
+    <p>Designed with curiosity. Built with code.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
 </body>
 </html>
