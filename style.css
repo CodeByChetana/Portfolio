@@ -158,16 +158,16 @@ button {
 .hero-photo {
   position: relative;
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
   margin: auto;
 }
 
 .photo-frame {
   position: relative;
   z-index: 2;
-  height: 420px;
+  height: 400px;
   overflow: hidden;
-  border: 1px solid var(--violet);
+  border: 2px solid var(--violet);
   border-radius: 15px;
   background: linear-gradient(145deg, #211438, #100d1b);
   box-shadow: 0 0 24px rgba(168, 85, 247, .24),
@@ -198,8 +198,8 @@ button {
 
 .photo-decoration {
   position: absolute;
-  inset: -16px 16px 16px -16px;
-  border: 1px solid rgba(168, 85, 247, .35);
+  inset: -14px -16px -16px -14px;
+  border: 1px solid rgb(160, 101, 215);
   border-radius: 15px;
 }
 
