@@ -92,10 +92,16 @@ I am passionate about **Data Analytics and Web Development**, focusing on solvin
 
 ```
 portfolio/
+|    |──assets/
+|       │──nptel-certificate.pdf
+|       │──profile.jpg
+|       │──resume.pdf
+|       |──SIH_Internal_certificate.pdf
+|   
 │── index.html
 │── style.css
 │── script.js
-│── profile.jpg
+
 ```
 
 ---
